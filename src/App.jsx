@@ -6,7 +6,7 @@ import Head from './components/Head'
 import ContactPage from './pages/ContactPage'
 
 
-import React from 'react'
+
 import ServicesPage from './pages/Service Page'
 import About from './pages/about us/About';
   
@@ -18,7 +18,7 @@ const App = () => {
     
       <Head/>
 
-    <div className="App">
+ 
     <ServicesPage/>
       <About />
       
