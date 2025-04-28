@@ -1,11 +1,12 @@
-import React from 'react'
+import React from 'react';
+import About from './pages/about us/About';
 
-const App = () => {
+function App() {
   return (
-    <div>
-      
+    <div className="App">
+      <About />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
