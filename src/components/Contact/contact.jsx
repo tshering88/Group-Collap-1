@@ -15,7 +15,7 @@ const Contacts = () => {
 
       <section className='card'>
       <Card.Title>Contact Information</Card.Title>
-      <ul style= {{margin: '1.5'}}>
+      <ul style= {{margin: '1.5', listStyleType: 'none'}}>
         {contactInfo.map((info, index) => (
             <li key= {index}>{info}</li>
         ))}
