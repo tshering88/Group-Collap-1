@@ -1,5 +1,13 @@
 
+
+
+import React from 'react';
+import Login from './pages/Login';
+import Signup from './pages/Signup';
+
+
 import React from 'react'
+
 
 
 
@@ -19,13 +27,19 @@ import ServicesPage from './pages/Service Page'
 import About from './pages/about us/About';
   
 const App = () => {
+
+
+
+
+
   return (
 
     <>
     <NavBar/>
     <Home/>
     
-
+ <Login/>
+            <Signup/>
 
     
      <ContactPage/>
@@ -44,4 +58,5 @@ const App = () => {
 
 
 export default App;
+
 
