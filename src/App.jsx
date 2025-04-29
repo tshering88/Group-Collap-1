@@ -27,7 +27,7 @@ const App = () => {
     
 
 
-    <div>
+    
      <ContactPage/>
     
       <Head/>
