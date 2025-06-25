@@ -1,25 +1,31 @@
-import React from 'react'
-import { Route, Router, Routes } from 'react-router-dom'
-import Contacts from '../components/Contact/contact'
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import SignIn from '../../pages/signin';
+import SignUp from '../../pages/SignUp';
+import ProtectedRoute from '../ProtectedRoute';
+import Home from '../home/Home';
+import About from '../About';
+import Contact from '../../pages/Contact';
+import Service from '../../pages/service/Service';
+// Import the ProtectedRoute component
 
-const AppRoute
-
-= () => {
+const AppRoutes = () => {
   return (
-    <Router>
-        <NavbarComponent/>
-        <Routes>
-        <Route path='/' element={<Home/>} />
-        <Route path='/about' element={<About/>} />
-        <Route path='/Services' element={<Ho/>} />
-        <Route path='/contact' element={<Contacts/>} />
-        <Route path='/login' element={<Login/>} />
-        <Route path='/signup' element={<Signup/>} />
-        </Routes>
-    </Router>
-  )
-}
+    <Routes>
+      {/* The root route now shows SignIn */}
+      <Route path="/" element={<SignIn />} />
 
-export default AppRoute 
+      <Route path="/signin" element={<SignIn />} />
+      <Route path="/signup" element={<SignUp />} />
+      
+      {/* Protected routes */}
+      <Route path="/home" element={<ProtectedRoute><Home /></ProtectedRoute>} />
+      <Route path="/about" element={<ProtectedRoute><About /></ProtectedRoute>} />
+      <Route path="/contact" element={<ProtectedRoute><Contact /></ProtectedRoute>} />
+      <Route path="/service" element={<ProtectedRoute><Service /></ProtectedRoute>} />
+    </Routes>
+   
+  );
+};
 
-
+export default AppRoutes;

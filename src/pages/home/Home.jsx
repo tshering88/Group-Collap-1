@@ -1,7 +1,7 @@
 import React from "react";
 import Learning from "../learning/learning";
 import CourseHighlights from "../course-highlights/CourseHighlights";
-import TrainingBenefits from "../traningbenefits/TraningBenefits";
+import TrainingBenefits from "../trainingbenefits/TrainingBenefits";
 
 const Home = () => {
   return (
